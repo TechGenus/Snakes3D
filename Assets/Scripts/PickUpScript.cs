@@ -9,10 +9,13 @@ public class PickUpScript : MonoBehaviour {
 
     public Vector3 rotate;
 
+	private PickUpSpawner pickUpSpawnerScript;
+
 	// Use this for initialization
 	void Start ()
     {
         t = GetComponent<Transform>();
+		pickUpSpawnerScript = GameObject.Find("PickUp Spawner").GetComponent<PickUpSpawner>();
 	}
 	
 	// Update is called once per frame
@@ -25,6 +28,7 @@ public class PickUpScript : MonoBehaviour {
     {
         if (other.gameObject.tag == "Head") {
 			other.gameObject.GetComponent<Head>().AddNewTail();
+			pickUpSpawnerScript.numOfPickUpsAlive -= 1;
 			Destroy(this.gameObject);
 		}
 	}

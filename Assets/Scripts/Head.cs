@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Head : MonoBehaviour {
 
@@ -14,6 +15,9 @@ public class Head : MonoBehaviour {
     public GameObject currTail;
     public GameObject body;
 
+	public Text winText;
+	[TextArea] public string loseTextOutputedToWinText;
+
     private float posX;
     private const float POSY = 0.5f;
     private float posZ;
@@ -26,6 +30,10 @@ public class Head : MonoBehaviour {
     private Transform dLT; // directional light transform
 
     private Transform t;
+
+	private void Awake() {
+		Time.timeScale = 1;
+	}
 
 	// Use this for initialization
 	void Start ()
@@ -72,18 +80,29 @@ public class Head : MonoBehaviour {
 
     public void AddNewTail()
     {
-		currTail.tag = "Body";
+		try {
+			currTail.tag = "Body";
+		}
+		catch (MissingReferenceException e) {
+			currTail = t.parent.transform.GetChild(t.parent.childCount - 1).gameObject;
+			currTail.tag = "Body";
+			Debug.Log(e);
+		}
 
-        GameObject newTail = Instantiate(body, currTail.transform.position, Quaternion.identity);
-        newTail.transform.parent = gameObject.transform.parent;
+		GameObject newTail = Instantiate(body, currTail.transform.position, Quaternion.identity);
+        //newTail.transform.parent = gameObject.transform.parent;
+		newTail.transform.parent = t.parent;
 		newTail.GetComponent<FollowHead>().head = currTail;
 
 		currTail = newTail;
     }
-
+	/*
 	private void OnCollisionEnter(Collision collision) {
 		if (collision.gameObject.tag != "Ground" && collision.gameObject.tag != "PickUpItem") {
+			winText.text = loseTextOutputedToWinText;
+			Time.timeScale = 0f;
 			Destroy(this.gameObject);
 		}
 	}
+	*/
 }
