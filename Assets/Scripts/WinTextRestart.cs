@@ -8,7 +8,7 @@ public class WinTextRestart : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown(KeyCode.R)) {
+		if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown("joystick button 7") ){
 			SceneManager.LoadScene(nameOfSceneToLoad);
 		}
 	}
