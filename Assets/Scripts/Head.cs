@@ -96,7 +96,6 @@ public class Head : MonoBehaviour {
 
 		currTail = newTail;
     }
-	/*
 	private void OnCollisionEnter(Collision collision) {
 		if (collision.gameObject.tag != "Ground" && collision.gameObject.tag != "PickUpItem") {
 			winText.text = loseTextOutputedToWinText;
@@ -104,5 +103,4 @@ public class Head : MonoBehaviour {
 			Destroy(this.gameObject);
 		}
 	}
-	*/
 }
