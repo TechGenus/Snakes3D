@@ -14,14 +14,14 @@ public class PickUpSpawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (numOfPickUpsAlive == 0) {
+		if (numOfPickUpsAlive <= 0) {
 			InstantiatePickUps();
 		}
 	}
 
 	void InstantiatePickUps() {
 		for (int i = 0; i < numOfPickUps; i++) {
-			Instantiate(pickUpPrefab, new Vector3(Random.Range(-14f, 14f), 0.75f, Random.Range(-11f, 11f)), Quaternion.identity);
+			Instantiate(pickUpPrefab, new Vector3(Random.Range(-15f, 13f), 0.75f, Random.Range(-10f, 12f)), Quaternion.identity);
 		}
 		numOfPickUpsAlive = numOfPickUps;
 	}

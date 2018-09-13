@@ -48,14 +48,14 @@ public class Head : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate ()
     {
-        if (Input.GetAxis(horizontalAxis) == 1 || Input.GetAxis(horizontalAxis) == -1)
+        if (Input.GetAxisRaw(horizontalAxis) == 1 || Input.GetAxisRaw(horizontalAxis) == -1)
         {
-            xAxis = (int)Input.GetAxis(horizontalAxis);
+            xAxis = (int)Input.GetAxisRaw(horizontalAxis);
             movingHorizontal = true;
         }
-        else if (Input.GetAxis(verticalAxis) == 1 || Input.GetAxis(verticalAxis) == -1)
+        else if (Input.GetAxisRaw(verticalAxis) == 1 || Input.GetAxisRaw(verticalAxis) == -1)
         {
-            zAxis = (int)Input.GetAxis(verticalAxis);
+            zAxis = (int)Input.GetAxisRaw(verticalAxis);
             movingHorizontal = false;
         }
 
