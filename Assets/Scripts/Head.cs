@@ -27,7 +27,6 @@ public class Head : MonoBehaviour {
     private bool movingHorizontal = true;
 
     public GameObject directionLight;
-    private Transform dLT; // directional light transform
 
     private Transform t;
 
@@ -39,7 +38,6 @@ public class Head : MonoBehaviour {
 	void Start ()
     {
         t = GetComponent<Transform>();
-        dLT = directionLight.GetComponent<Transform>();
 
 		posX = t.position.x;
 		posZ = t.position.z;

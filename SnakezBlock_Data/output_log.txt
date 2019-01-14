@@ -7,50 +7,52 @@ Direct3D:
     VRAM:     2111 MB
     Driver:   23.20.16.4973
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\jbhanush\Desktop\New folder\Snakes3D\SnakezBlock_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\jbhanush\Desktop\New folder\Snakes3D\SnakezBlock_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\jbhanush\Desktop\New folder\Snakes3D\SnakezBlock_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\jbhanush\Desktop\New folder\Snakes3D\SnakezBlock_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\jbhanush\Desktop\New folder\Snakes3D\SnakezBlock_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\jbhanush\Desktop\New folder\Snakes3D\SnakezBlock_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\jbhanush\Desktop\New folder\Snakes3D\SnakezBlock_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\jbhanush\Desktop\New folder\Snakes3D\SnakezBlock_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\jbhanush\Desktop\New folder\Snakes3D\SnakezBlock_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
-Loading C:\Users\jbhanush\Desktop\New folder\Snakes3D\SnakezBlock_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.034 seconds
-Platform assembly: C:\Users\jbhanush\Desktop\New folder\Snakes3D\SnakezBlock_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\jbhanush\Desktop\New folder\Snakes3D\SnakezBlock_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Temp\...a\Snakes3D\SnakezBlock_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Temp\...a\Snakes3D\SnakezBlock_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Temp\...a\Snakes3D\SnakezBlock_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Temp\...a\Snakes3D\SnakezBlock_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Temp\...a\Snakes3D\SnakezBlock_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Temp\...a\Snakes3D\SnakezBlock_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Temp\...a\Snakes3D\SnakezBlock_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Temp\...a\Snakes3D\SnakezBlock_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Temp\...a\Snakes3D\SnakezBlock_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Temp\...a\Snakes3D\SnakezBlock_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.017 seconds
+Platform assembly: C:\Temp\...a\Snakes3D\SnakezBlock_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Temp\...a\Snakes3D\SnakezBlock_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 3.220476 ms
+UnloadTime: 2.557440 ms
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: b20 -> priority: 1 
-  Thread -> id: 21a0 -> priority: 1 
-  Thread -> id: e94 -> priority: 1 
-  Thread -> id: 2f74 -> priority: 1 
+  Thread -> id: a54 -> priority: 1 
+  Thread -> id: 24d4 -> priority: 1 
+  Thread -> id: 24b8 -> priority: 1 
+  Thread -> id: 24f0 -> priority: 1 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.878216 ms
+UnloadTime: 3.271680 ms
 
 Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 394.
-Total: 1.581793 ms (FindLiveObjects: 0.043235 ms CreateObjectMapping: 0.034986 ms MarkObjects: 0.353848 ms  DeleteObjects: 1.148869 ms)
+Total: 0.562915 ms (FindLiveObjects: 0.020195 ms CreateObjectMapping: 0.010808 ms MarkObjects: 0.162133 ms  DeleteObjects: 0.369208 ms)
 
 Untagged
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:set_tag (string)
-  at Head.AddNewTail () [0x00000] in <filename unknown>:0 
-  at PickUpScript.OnTriggerEnter (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Untagged
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:set_tag (string)
-  at Head.AddNewTail () [0x00000] in <filename unknown>:0 
-  at PickUpScript.OnTriggerEnter (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Untagged
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Untagged
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Untagged
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 

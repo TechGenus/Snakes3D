@@ -21,7 +21,7 @@ public class PickUpSpawner : MonoBehaviour {
 
 	void InstantiatePickUps() {
 		for (int i = 0; i < numOfPickUps; i++) {
-			Instantiate(pickUpPrefab, new Vector3(Random.Range(-15f, 13f), 0.75f, Random.Range(-10f, 12f)), Quaternion.identity);
+			Instantiate(pickUpPrefab, new Vector3(Random.Range(-13.5f, 13.5f), 0.75f, Random.Range(-12f, 12f)), Quaternion.identity);
 		}
 		numOfPickUpsAlive = numOfPickUps;
 	}
