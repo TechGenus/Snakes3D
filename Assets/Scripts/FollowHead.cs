@@ -40,7 +40,6 @@ public class FollowHead : MonoBehaviour {
 
 	private void OnTriggerEnter(Collider other) {
 		if (other.gameObject.tag == "PickUpItem") {
-			Destroy(other.gameObject);
 			Destroy(this.gameObject);
 		}
 	}

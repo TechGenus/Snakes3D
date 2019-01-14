@@ -84,7 +84,6 @@ public class Head : MonoBehaviour {
 		catch (MissingReferenceException e) {
 			currTail = t.parent.transform.GetChild(t.parent.childCount - 1).gameObject;
 			currTail.tag = "Body";
-			Debug.Log(e);
 		}
 
 		GameObject newTail = Instantiate(body, currTail.transform.position, Quaternion.identity);

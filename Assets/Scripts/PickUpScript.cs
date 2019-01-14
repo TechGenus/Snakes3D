@@ -31,5 +31,12 @@ public class PickUpScript : MonoBehaviour {
 			pickUpSpawnerScript.numOfPickUpsAlive -= 1;
 			Destroy(this.gameObject);
 		}
+        else if (other.gameObject.tag == "Body"
+            || other.gameObject.tag == "Tail"
+            || other.gameObject.tag == "Player")
+        {
+            pickUpSpawnerScript.numOfPickUpsAlive -= 1;
+            Destroy(this.gameObject);
+        }
 	}
 }
