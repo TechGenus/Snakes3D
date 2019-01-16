@@ -94,7 +94,7 @@ public class Head : MonoBehaviour {
 		currTail = newTail;
     }
 	private void OnCollisionEnter(Collision collision) {
-		if (collision.gameObject.tag != "Ground" && collision.gameObject.tag != "PickUpItem") {
+		if (collision.gameObject.tag != "Ground" && collision.gameObject.tag != "PickUpItem" && collision.gameObject.tag != "Placeholder") {
 			winText.text = loseTextOutputedToWinText;
 			Time.timeScale = 0f;
 			Destroy(this.gameObject);

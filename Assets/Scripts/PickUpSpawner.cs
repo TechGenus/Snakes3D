@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PickUpSpawner : MonoBehaviour {
-	public GameObject pickUpPrefab;
+	public GameObject placeHolderPrefab;
 	public int numOfPickUps = 6;
 	[HideInInspector] public int numOfPickUpsAlive;
 
@@ -21,7 +21,7 @@ public class PickUpSpawner : MonoBehaviour {
 
 	void InstantiatePickUps() {
 		for (int i = 0; i < numOfPickUps; i++) {
-			Instantiate(pickUpPrefab, new Vector3(Random.Range(-13.5f, 13.5f), 0.75f, Random.Range(-12f, 12f)), Quaternion.identity);
+			Instantiate(placeHolderPrefab, new Vector3(Random.Range(-13.5f, 13.5f), 2.75f, Random.Range(-12f, 12f)), Quaternion.identity);
 		}
 		numOfPickUpsAlive = numOfPickUps;
 	}

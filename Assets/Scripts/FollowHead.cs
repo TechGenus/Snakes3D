@@ -38,9 +38,11 @@ public class FollowHead : MonoBehaviour {
 		}
     }
 
-	private void OnTriggerEnter(Collider other) {
-		if (other.gameObject.tag == "PickUpItem") {
-			Destroy(this.gameObject);
-		}
-	}
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "PickUpItem")
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }

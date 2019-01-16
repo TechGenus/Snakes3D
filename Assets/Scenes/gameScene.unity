@@ -308,7 +308,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!1 &410054787
 GameObject:
@@ -1101,7 +1101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dda664e417d55b149ab955fa9449610d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpPrefab: {fileID: 1692228887637636, guid: 9cdf0ed020237a741b3529278748f0f6,
+  placeHolderPrefab: {fileID: 1799478943767130, guid: dded48dfee5f34c42b890b8fd7c8e2ed,
     type: 2}
   numOfPickUps: 6
   numOfPickUpsAlive: 0
@@ -1289,6 +1289,52 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1419289749}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1457528033
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4003073711553460, guid: dded48dfee5f34c42b890b8fd7c8e2ed, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003073711553460, guid: dded48dfee5f34c42b890b8fd7c8e2ed, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003073711553460, guid: dded48dfee5f34c42b890b8fd7c8e2ed, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003073711553460, guid: dded48dfee5f34c42b890b8fd7c8e2ed, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003073711553460, guid: dded48dfee5f34c42b890b8fd7c8e2ed, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003073711553460, guid: dded48dfee5f34c42b890b8fd7c8e2ed, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003073711553460, guid: dded48dfee5f34c42b890b8fd7c8e2ed, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003073711553460, guid: dded48dfee5f34c42b890b8fd7c8e2ed, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1799478943767130, guid: dded48dfee5f34c42b890b8fd7c8e2ed, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dded48dfee5f34c42b890b8fd7c8e2ed, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1509742483 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1050473304441260, guid: c69e2fb2c1a44b346bf34b35f58ad18e,
@@ -1671,7 +1717,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!1 &1796708355
 GameObject:
@@ -1683,7 +1729,7 @@ GameObject:
   - component: {fileID: 1796708356}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
